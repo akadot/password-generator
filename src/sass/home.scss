@@ -1,0 +1,13 @@
+@import './reset.scss';
+@import './colors.scss';
+
+.container {
+	height: 100vh;
+	background-color: $dark;
+	color: $text;
+
+	section {
+		padding: 1rem;
+		background-color: $light;
+	}
+}
