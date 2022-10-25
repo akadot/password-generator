@@ -2,12 +2,23 @@
 @import './colors.scss';
 
 .container {
-	height: 100vh;
-	background-color: $dark;
+	height: 100%;
 	color: $text;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
 
 	section {
 		padding: 1rem;
 		background-color: $light;
+	}
+
+	button{
+		background-color: $main;
+		color: $white;
+		padding: .8rem;
+		border: none;
 	}
 }
