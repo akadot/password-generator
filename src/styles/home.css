@@ -5,20 +5,33 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body {
   height: 100vh;
   font-family: monospace;
+  background-color: #0e0d12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  height: 100vh;
-  background-color: #0e0d12;
+  height: 100%;
   color: #6a6973;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
 }
 .container section {
   padding: 1rem;
   background-color: #24232a;
+}
+.container button {
+  background-color: #8A4FFF;
+  color: #ffffff;
+  padding: 0.8rem;
+  border: none;
 }
 
 /*# sourceMappingURL=home.css.map */
