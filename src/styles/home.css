@@ -16,6 +16,7 @@ body {
 
 .container {
   height: 100%;
+  width: 30rem;
   color: #6a6973;
   display: flex;
   flex-direction: column;
@@ -24,14 +25,85 @@ body {
   gap: 1rem;
 }
 .container section {
+  width: 100%;
   padding: 1rem;
   background-color: #24232a;
+  display: flex;
 }
 .container button {
   background-color: #8A4FFF;
   color: #ffffff;
-  padding: 0.8rem;
+  padding: 1rem 0.3rem;
+  width: 100%;
   border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.options {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.display p {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.inputs p {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.inputs p label {
+  padding-left: 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.inputs p input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: #8A4FFF;
+  width: 1.3em;
+  height: 1.3em;
+  border: 0.2em solid #8A4FFF;
+  border-radius: 0.15em;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  transform: translateY(-0.075em);
+}
+.inputs p input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #8A4FFF;
+}
+.inputs p input[type=checkbox]:checked::before {
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=home.css.map */
