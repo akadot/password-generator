@@ -10,13 +10,27 @@ function App() {
         <button>Encrypted</button>
       </section>
       <section className="content">
-        <p>1sad123SD</p>
-        <label htmlFor="numbers">Numbers</label>
-        <input type="checkbox" name="" id="numbers" />
-        <label htmlFor="upper">Upper Case</label>
-        <input type="checkbox" name="" id="upper" />
-        <label htmlFor="symbols">Symbols</label>
-        <input type="checkbox" name="" id="symbols" />
+        
+        <section className='display'>
+          <p>1sad123SD</p>
+        </section>
+
+        <section className='inputs'>
+          <p>
+            <input type="checkbox" name="" id="numbers" />
+            <label htmlFor="numbers">Numbers</label>
+          </p>
+          
+          <p>
+            <input type="checkbox" name="" id="upper" />
+            <label htmlFor="upper">Upper Case</label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="" id="symbols" />
+            <label htmlFor="symbols">Symbols</label>
+          </p>
+        </section>
         <button>Generate</button>
       </section>
     </div>
