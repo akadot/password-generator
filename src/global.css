@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, :root{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:#0D0C11;
+  --fg:#fff;
+  --main:#42b883;
+  --secondary-bg:#222427;
+
+
+  font-family: 'Lexend', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+body {
+  height: 100vh;
+}
+
+#app{
+  height: 100%;
+}
