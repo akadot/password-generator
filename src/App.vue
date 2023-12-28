@@ -1,14 +1,17 @@
+<script lang="ts" setup>
+import Generator from './components/Generator.vue';
+</script>
+
 <template>
   <section class="container">
     <section class="content">
       <h1>dotpass</h1>
-      <h2>Slogan</h2>
-      <p>Mussum Ipsum, cacilds vidis litro abertis.  Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Casamentiss faiz malandris se pirulitá.</p>
-      <a href="#">To keep multiple passwords, create account.</a>
+      <h2>Keep safe.</h2>
+      <p>No more creating and memorizing passwords. Access all your accounts with just a few clicks, in the palm of your hand.</p>
+      <p>Feel free to test our passwords below, or create your account to have access to all features.</p>
+      <button>Create your account &nbsp; &rarr;</button>
     </section>
-    <section>
-      <p>component</p>
-    </section>
+    <Generator/>
   </section>
 </template>
 
@@ -19,8 +22,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 10rem; 
+  justify-content: space-between;
+  padding: 0 10rem;
+  column-gap: 1rem;
 }
 
 .content{
@@ -30,6 +34,24 @@
   justify-content: space-between;
   word-wrap: break-word;
   width: 40%;
+}
+
+h1{
+  color: var(--fg);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+h2{
+  font-weight: 500;
+  color: var(--main);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+p{
+  padding: 0.3rem 0;
+  font-family: 'Lexend', sans-serif;
 }
 
 </style>
