@@ -6,10 +6,14 @@ import Generator from './components/Generator.vue';
   <section class="container">
     <section class="content">
       <h1>dotpass</h1>
-      <h2>Keep safe.</h2>
+      <h2>Keep your digital life safety.</h2>
       <p>No more creating and memorizing passwords. Access all your accounts with just a few clicks, in the palm of your hand.</p>
       <p>Feel free to test our passwords below, or create your account to have access to all features.</p>
-      <button>Create your account &nbsp; &rarr;</button>
+      <button>
+        <a href="#">
+          Create your account &nbsp; &rarr;
+        </a>
+      </button>
     </section>
     <Generator/>
   </section>
